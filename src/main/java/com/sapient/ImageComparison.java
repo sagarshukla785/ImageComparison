@@ -23,7 +23,7 @@ public class ImageComparison {
 			int[] image1Data = null;
 			int[] image2Data = null;
 
-			// Verifying if pixels are completing loaded or not
+			// Verifying if pixels are loaded or not
 			if (grabImage1Pixels.grabPixels()) {
 				int width = grabImage1Pixels.getWidth();
 				int height = grabImage1Pixels.getHeight();
