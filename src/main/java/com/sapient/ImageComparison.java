@@ -8,7 +8,7 @@ public class ImageComparison {
 
 	static void processImage() {
 
-		String file1 = "/Users/sagshukl/desktop/Automation/Sample4.jpg";
+		String file1 = "/Users/sagshukl/desktop/Automation/Sample2.jpg";
 		String file2 = "/Users/sagshukl/desktop/Automation/Sample5.jpg";
 
 		// Load the images
@@ -50,7 +50,10 @@ public class ImageComparison {
 		}
 	}
 
-	public static void main(String args[]) {
-		processImage();
+	public static void main(String args[]) throws InterruptedException {
+		//processImage();
+		//ChangeProfilePicture();
+		ChangeProfilePicture obj = new ChangeProfilePicture("https://web.whatsapp.com/", "/Users/sagshukl/Desktop/Automation/Sample.jpg");
+		obj.changeImage();
 	}
 }
